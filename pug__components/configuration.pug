@@ -1,0 +1,36 @@
+-var navTexts = ["Features","Team", "Sign In"]
+-var benefitImages = ["icon-access-anywhere","icon-security","icon-collaboration","icon-any-file"]
+-var benefitsTitles = ["Access your files, anywhere", "Security you can trust", "Real-time collaboration", "Store any type of file"]
+-var benefitsParagraphs = ["The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere.","2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your files.","Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.","Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared."]
+-var userImgs = ["profile-1","profile-2","profile-3"]
+-var userNames = ["Satish Patel","Bruce McKenzie","Iva Boyd"]
+-var pageInfoIcons = ["icon-location","icon-phone","icon-email"]
+-var pageInfoTexts = ["Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua","+1-543-123-4567","example@fylo.com"]
+-var footerTexts = ["About Us","Jobs","Press","Blog","Contact Us","Terms","Privacy"]
+-var socialMediaIcons = ["fb_icon","twitter_icon","instagram_icon"]
+
+mixin navElement(text)
+    li=text
+
+mixin benefitCard(image, title, content)
+    div 
+        img(src="./../images/"+image+".svg", alt="")
+        h2=title 
+        p=content 
+
+mixin commentCard(userImg, userName)
+    div 
+        p Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.
+        div 
+            img(src="./../images/"+userImg+".jpg", alt="")
+            div 
+                span=userName
+                span Founder & CEO, Huddle
+
+mixin pageInfoContent(icon, text)
+    img(src="./../images/"+icon+".svg", alt="")
+    span=text
+
+
+mixin footerElement(text)
+    li=text

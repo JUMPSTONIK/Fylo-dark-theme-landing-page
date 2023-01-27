@@ -1,0 +1,17 @@
+footer 
+    img(src="./../images/logo.svg", alt="")
+    div 
+        div
+            +pageInfoContent(pageInfoIcons[0],pageInfoTexts[0])
+        div
+            +pageInfoContent(pageInfoIcons[1],pageInfoTexts[1])
+            +pageInfoContent(pageInfoIcons[2],pageInfoTexts[2])
+        div 
+            each index in [0,1,2,3]
+                +footerElement(footerTexts[index])
+        div 
+            each index in [4,5,6]
+                +footerElement(footerTexts[index])
+        div 
+            each icon in socialMediaIcons
+                img(src="./../images/"+icon+".svg", alt="")        
