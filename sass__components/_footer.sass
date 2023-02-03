@@ -7,6 +7,8 @@
     
 
     &--container
+        display: flex
+        flex-direction: column
 
         &--direction
             display: flex
@@ -65,3 +67,19 @@
             font-size: 1.6rem
             text-align: left
             line-height: 2.4rem
+
+@media screen and ( min-width: 1440px )
+
+    .footer
+        padding: 0 28px 52px
+        margin-top: 68px
+        display: flex
+        flex-direction: column
+
+        &--container
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+
+            &--direction
+                width: 379px

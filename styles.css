@@ -540,6 +540,10 @@ header nav ul li:active {
   display: flex;
   flex-direction: column;
 }
+.footer--container {
+  display: flex;
+  flex-direction: column;
+}
 .footer--container--direction, .footer--container--contact {
   display: flex;
   flex-direction: column;
@@ -606,6 +610,23 @@ header nav ul li:active {
   font-size: 1.6rem;
   text-align: left;
   line-height: 2.4rem;
+}
+
+@media screen and (min-width: 1440px) {
+  .footer {
+    padding: 0 28px 52px;
+    margin-top: 68px;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer--container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer--container--direction, .footer--container--contact {
+    width: 379px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
