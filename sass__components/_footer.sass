@@ -1,0 +1,64 @@
+.footer
+    padding: 0 28px 52px
+    margin-top: 68px
+    display: flex
+    flex-direction: column
+
+    
+
+    &--container
+
+        &--direction
+            display: flex
+            flex-direction: column
+            margin-top: 35px
+
+        &--contact
+            margin-top: 16px
+            gap: 16px
+            @extend .footer--container--direction
+
+        &--sitemap1
+            margin-top: 56px
+            display: flex
+            flex-direction: column
+            list-style: none
+            gap: 16px
+
+        &--sitemap2
+            @extend .footer--container--sitemap1
+            margin-top: 48px
+
+        li
+            @include comment
+            font-size: 1.6rem
+
+        &--socials
+            margin-top: 56px
+            display: flex
+            gap: 10px
+            justify-content: center
+            
+            img
+                border: 1px solid $Color-Neutral
+                border-radius: 50%
+                padding: 7.5px
+                height: 36px
+                width: 36px
+
+    &--logo
+        width: 108px
+        height: 31px
+
+.newsite
+        display: flex
+        gap: 16px
+        &--logo
+            width: 24px
+            height: 24px
+
+        &--paragraph
+            @include paragraph
+            font-size: 1.6rem
+            text-align: left
+            line-height: 2.4rem

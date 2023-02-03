@@ -1,0 +1,96 @@
+.productive--container
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 0 28px
+    margin-top: 160px
+    
+
+    img
+        width: 304px
+        height: 230px
+    .productive
+        display: flex
+        flex-direction: column
+        gap: 16px
+        margin-top: 48px
+
+        &--title
+            @include title
+            font-size: 1.8rem
+            text-align: left
+
+        &--paragraph1
+            @include paragraph
+            text-align: left
+
+        &--paragraph2
+            @extend .productive--paragraph1
+
+
+
+
+.external
+    display: flex
+    align-items: center
+    gap: 7px
+    border-bottom: 1px solid $Color-Cyan
+    width: fit-content
+    padding: 6px 6px 6px 0
+    &--paragraph
+        font-family: $Font2
+        font-size: 1.4rem
+        font-weight: 400
+        color: $Color-Cyan
+
+    img
+        height: 12px
+        width: 12px
+
+
+@media screen and ( min-width: 1440px )
+    .productive--container
+        display: flex
+        flex-direction: row
+        padding: 0 105px
+        margin-top: 160px
+        gap: 58px
+
+        img
+            width: 615px
+            height: 464px
+        .productive
+            display: flex
+            flex-direction: column
+            gap: 20px
+            margin-top: 48px
+
+            &--title
+                @include title
+                font-size: 4rem
+                text-align: left
+
+            &--paragraph1
+                @include paragraph
+                text-align: left
+                font-size: 1.6rem
+        
+            &--paragraph2
+                @extend .productive--paragraph1
+
+    .external
+        display: flex
+        align-items: center
+        gap: 7px
+        border-bottom: 1px solid $Color-Cyan
+        width: fit-content
+        padding: 6px 6px 6px 0
+        &--paragraph
+            font-family: $Font2
+            font-size: 1.4rem
+            font-weight: 400
+            color: $Color-Cyan
+
+        img
+            height: 12px
+            width: 12px

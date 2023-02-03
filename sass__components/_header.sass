@@ -1,0 +1,37 @@
+header
+    display: flex
+    justify-content: space-between
+    padding: 24px 20px 0
+
+    img
+        width: 80px
+        height: 24px
+
+    nav
+
+        ul
+            display: block
+            display: flex
+            justify-content: center
+            align-items: center
+            gap: 24px
+            list-style-type: none
+            li
+                font-family: $Font1
+                display: inline-block
+                color: $Color-Neutral
+                font-size: 1.2rem
+                text-align: center
+                width: fit-content
+
+@media screen and ( min-width: 1440px )
+    header
+        padding: 73px 80px
+        img
+            width: 176px
+            height: 52px
+        nav
+            ul
+                gap: 57px
+                li
+                    font-size: 1.6rem

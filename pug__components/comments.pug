@@ -1,4 +1,5 @@
-section 
-    img(src="./../images/bg-quotes.png", alt="")
-    each index in [0,1,2]
-        +commentCard(userImgs[index], userNames[index])
+section.comments 
+    .comments--container
+        img.comments--quotes(src="./../images/bg-quotes.png", alt="")
+        each index in [0,1,2]
+            +commentCard(userImgs[index], userNames[index])

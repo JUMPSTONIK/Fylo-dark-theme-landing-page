@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap')
+$Primary-color-intro-email:  hsl(217, 28%, 15%)
+$Primary-color2-main:  hsl(218, 28%, 13%)
+$Primary-color3-footer:  hsl(216, 53%, 9%)
+$Primary-color4-testimonial:  hsl(219, 30%, 18%)
+$Color-Cyan: hsl(176, 68%, 64%)
+$Color-Blue: hsl(198, 60%, 50%)
+$Color-Error: hsl(0, 100%, 63%)
+$Color-Neutral: hsl(0, 0%, 100%)
+$Font-size: 14px
+$Font1: 'Raleway', sans-serif
+$Font2: 'Open Sans', sans-serif
+
+*
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+
+html
+    font-size: 62.5%
+    
+body
+    background-color: $Primary-color2-main
+
+img
+    width: 100px
+
+.container
+    min-width: 320px
+
+
+@mixin title()
+    color: $Color-Neutral
+    text-align: center
+    font-weight: 700
+    font-family: $Font1
+    line-height: 36px
+
+@mixin paragraph()
+    font-size: 1.4rem
+    color: $Color-Neutral
+    line-height: 21px
+    font-family: $Font2
+    font-weight: 400
+    text-align: center
+
+@mixin primary-btn()
+    font-family: $Font1
+    color: $Color-Neutral
+    font-weight: 700
+    font-size: 1.4rem
+    background: linear-gradient(134.79deg, $Color-Cyan -42.11%, $Color-Blue 100%)
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925)
+    border-radius: 24px
+
+@mixin comment()
+    color: $Color-Neutral
+    font-family: $Font2
+    line-height: 18px
+    font-size: 1rem
+
+
+

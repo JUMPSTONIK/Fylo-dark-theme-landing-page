@@ -1,0 +1,76 @@
+.comments
+    margin-top: 160px
+    padding: 0 48px
+    display: flex
+    justify-content: center
+    &--container
+        position: relative
+        display: flex
+        flex-direction: column
+        gap: 24px
+    &--quotes
+        width: 32px
+        height: 18px
+        position: absolute
+        top: -16px
+        left: 0
+
+.comment
+    display: flex
+    flex-direction: column
+    padding: 24px 20px
+    background-color: $Primary-color4-testimonial
+    gap: 17px
+    width: 280px
+    height: 160px
+
+    &--paragraph
+        @include comment
+
+    &--profile
+        display: flex
+        gap: 8px
+        img
+            width: 24px
+            height: 24px
+            border-radius: 50%
+
+.profile
+    display: flex
+    flex-direction: column
+    gap: 4px
+
+    &--username
+        color: $Color-Neutral
+        font-size: 1rem
+        font-family: $Font2
+        font-weight: 700
+
+    &--degree
+        color: $Color-Neutral
+        font-size: 0.7rem
+        font-family: $Font2
+
+@media screen and ( min-width: 1440px )
+    .comments
+        margin-top: 160px
+        padding: 0 48px
+
+        &--container
+            position: relative
+            display: flex
+            flex-direction: row
+            gap: 24px
+            width: fit-content
+
+
+    .comment
+        padding: 40px 25px 26px
+        gap: 24px
+        height: 200px
+        width: 360px
+
+        &--paragraph
+            @include comment
+            font-size: 1.4rem
+

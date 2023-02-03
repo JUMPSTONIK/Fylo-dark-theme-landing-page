@@ -13,23 +13,24 @@ mixin navElement(text)
     li=text
 
 mixin benefitCard(image, title, content)
-    div 
+    .benefit 
         img(src="./../images/"+image+".svg", alt="")
-        h2=title 
-        p=content 
+        h2.benefit--title=title 
+        p.benefit--paragraph=content 
 
 mixin commentCard(userImg, userName)
-    div 
-        p Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.
-        div 
+    .comment 
+        p.comment--paragraph Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.
+        .comment--profile 
             img(src="./../images/"+userImg+".jpg", alt="")
-            div 
-                span=userName
-                span Founder & CEO, Huddle
+            .profile
+                p.profile--username=userName
+                p.profile--degree Founder & CEO, Huddle
 
 mixin pageInfoContent(icon, text)
-    img(src="./../images/"+icon+".svg", alt="")
-    span=text
+    .newsite
+        img.newsite--logo(src="./../images/"+icon+".svg", alt="")
+        p.newsite--paragraph=text
 
 
 mixin footerElement(text)
