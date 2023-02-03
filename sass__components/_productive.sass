@@ -37,15 +37,26 @@
     border-bottom: 1px solid $Color-Cyan
     width: fit-content
     padding: 6px 6px 6px 0
+    &:active
+        border-bottom: 1px solid $Color-Neutral
+        .external--paragraph
+            color: $Color-Neutral
+        .external--icon
+            background-image: url("./../images/icon-arrow-white.svg")
+
     &--paragraph
         font-family: $Font2
         font-size: 1.4rem
         font-weight: 400
         color: $Color-Cyan
 
-    img
-        height: 12px
-        width: 12px
+    &--icon
+        background-image: url("./../images/icon-arrow-cyan.svg")
+        height: 16px
+        width: 16px
+    
+
+
 
 
 @media screen and ( min-width: 1440px )
@@ -75,8 +86,8 @@
                 text-align: left
                 font-size: 1.6rem
         
-            &--paragraph2
-                @extend .productive--paragraph1
+            // &--paragraph2
+            //     @extend .productive--paragraph1
 
     .external
         display: flex

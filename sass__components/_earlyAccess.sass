@@ -17,14 +17,64 @@
         @include paragraph
         margin-top: 16px
 
-    &--input
+    div
+        display: flex
+        flex-direction: column
+        gap: 24px
         margin-top: 32px
+
+    &--input
         padding: 18px 29px
         width: 280px
         border-radius: 24px
+        border: none
 
     &--btn
         @include primary-btn
-        margin-top: 24px
         width: 280px
         padding: 16px 70px
+
+    &--btn:active
+        background: linear-gradient(134.79deg, $Color-Cyan -42.11%,  $Color-Cyan 100%)
+
+
+@media screen and ( min-width: 1440px )
+    .earlyAccess
+        margin-top: 160px
+        padding: 0 20px
+        &--form
+            padding: 42px 95px 37px
+            background-color: $Primary-color-intro-email
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+
+        &--title
+            @include title
+            font-size: 3.2rem
+
+        &--paragraph
+            @include paragraph
+            margin-top: 16px
+
+        div
+            display: flex
+            flex-direction: row
+            gap: 29px
+            text-align: center
+
+        &--input
+            height: 48px
+            width: 480px
+            padding: 18px 29px
+            border-radius: 24px
+
+        &--btn
+            @include primary-btn
+            width: 280px
+            height: 48px
+            padding: 16px 70px
+
+        &--btn:active
+            background: linear-gradient(134.79deg, $Color-Cyan -42.11%,  $Color-Cyan 100%)
