@@ -20,6 +20,8 @@ img {
 
 .container {
   min-width: 320px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 header {
@@ -154,11 +156,12 @@ header nav ul li:active {
   }
 }
 .benefits {
-  margin-top: 120px;
+  width: 320px;
   gap: 80px;
   padding: 0 27px;
   display: flex;
   flex-direction: column;
+  margin: 120px auto 0;
 }
 .benefits .benefit {
   display: flex;
@@ -421,6 +424,8 @@ header nav ul li:active {
 .earlyAccess {
   margin-top: 160px;
   padding: 0 20px;
+  display: flex;
+  justify-content: center;
 }
 .earlyAccess--form {
   padding: 40px 28px 37px;
@@ -429,6 +434,7 @@ header nav ul li:active {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 336px;
 }
 .earlyAccess--title {
   color: hsl(0deg, 0%, 100%);
@@ -447,7 +453,7 @@ header nav ul li:active {
   text-align: center;
   margin-top: 16px;
 }
-.earlyAccess div {
+.earlyAccess .inputs-container {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -458,6 +464,9 @@ header nav ul li:active {
   width: 280px;
   border-radius: 24px;
   border: none;
+}
+.earlyAccess--input:focus {
+  outline: none;
 }
 .earlyAccess--btn {
   font-family: "Raleway", sans-serif;
@@ -471,6 +480,11 @@ header nav ul li:active {
   width: 280px;
   padding: 16px 70px;
 }
+.earlyAccess--error {
+  margin-top: 4px;
+  align-self: start;
+  color: red;
+}
 .earlyAccess--btn:active {
   background: linear-gradient(134.79deg, hsl(176deg, 68%, 64%) -42.11%, hsl(176deg, 68%, 64%) 100%);
 }
@@ -479,6 +493,8 @@ header nav ul li:active {
   .earlyAccess {
     margin-top: 160px;
     padding: 0 20px;
+    display: flex;
+    justify-content: center;
   }
   .earlyAccess--form {
     padding: 42px 95px 37px;
@@ -487,6 +503,7 @@ header nav ul li:active {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 863px;
   }
   .earlyAccess--title {
     color: hsl(0deg, 0%, 100%);
@@ -505,7 +522,7 @@ header nav ul li:active {
     text-align: center;
     margin-top: 16px;
   }
-  .earlyAccess div {
+  .earlyAccess .inputs-container {
     display: flex;
     flex-direction: row;
     gap: 29px;
@@ -514,7 +531,7 @@ header nav ul li:active {
   .earlyAccess--input {
     height: 48px;
     width: 480px;
-    padding: 18px 29px;
+    padding: 18px 38px;
     border-radius: 24px;
   }
   .earlyAccess--btn {
@@ -529,6 +546,9 @@ header nav ul li:active {
     width: 280px;
     height: 48px;
     padding: 16px 70px;
+  }
+  .earlyAccess--error {
+    margin-left: 0;
   }
   .earlyAccess--btn:active {
     background: linear-gradient(134.79deg, hsl(176deg, 68%, 64%) -42.11%, hsl(176deg, 68%, 64%) 100%);
@@ -618,14 +638,61 @@ header nav ul li:active {
     margin-top: 68px;
     display: flex;
     flex-direction: column;
+    gap: 52px;
   }
   .footer--container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 60px;
   }
   .footer--container--direction, .footer--container--contact {
+    margin-top: 0;
     width: 379px;
+  }
+  .footer--container--contact {
+    margin-top: 0;
+    width: fit-content;
+  }
+  .footer--container--sitemap1, .footer--container--sitemap2 {
+    margin-top: 0;
+  }
+  .footer--container li {
+    color: hsl(0deg, 0%, 100%);
+    font-family: "Open Sans", sans-serif;
+    line-height: 18px;
+    font-size: 1rem;
+    font-size: 1.6rem;
+    opacity: 0.5;
+  }
+  .footer--container li:active {
+    opacity: 1;
+  }
+  .footer--container--socials {
+    margin-top: 0;
+  }
+  .footer--logo {
+    width: 108px;
+    height: 31px;
+  }
+  .newsite {
+    display: flex;
+    gap: 16px;
+  }
+  .newsite--logo {
+    width: 24px;
+    height: 24px;
+  }
+  .newsite--paragraph {
+    font-size: 1.4rem;
+    color: hsl(0deg, 0%, 100%);
+    line-height: 21px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.6rem;
+    text-align: left;
+    line-height: 2.4rem;
   }
 }
 

@@ -83,14 +83,15 @@
           </div>
         </section>
         <section class="earlyAccess">
-          <form class="earlyAccess--form">
+          <div class="earlyAccess--form">
             <h2 class="earlyAccess--title">Get early access today</h2>
             <p class="earlyAccess--paragraph">It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
-            <div>
+            <div class="inputs-container">
               <input class="earlyAccess--input" type="email" name="email" placeholder="email@example.com"/>
-              <button class="earlyAccess--btn" onclick="return false"> Get Started For Free</button>
+              <button class="earlyAccess--btn" onclick="validateEmail()"> Get Started For Free</button>
             </div>
-          </form>
+            <p class="earlyAccess--error" style="display:none;">Error, please check your email</p>
+          </div>
         </section>
       </main>
       <footer class="footer"> <img class="footer--logo" src="./../images/logo.svg" alt=""/>

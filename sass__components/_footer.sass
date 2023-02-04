@@ -75,11 +75,52 @@
         margin-top: 68px
         display: flex
         flex-direction: column
+        gap: 52px
 
         &--container
             display: flex
             flex-direction: row
             justify-content: space-between
+            gap: 60px
 
             &--direction
+                margin-top: 0
                 width: 379px
+    
+            &--contact
+                margin-top: 0
+                width: fit-content
+               
+            &--sitemap1
+                margin-top: 0
+
+            &--sitemap2
+                @extend .footer--container--sitemap1
+                
+
+            li
+                @include comment
+                font-size: 1.6rem
+                opacity: 0.5
+            li:active
+                opacity: 1
+
+            &--socials
+                margin-top: 0
+
+        &--logo
+            width: 108px
+            height: 31px
+
+    .newsite
+            display: flex
+            gap: 16px
+            &--logo
+                width: 24px
+                height: 24px
+
+            &--paragraph
+                @include paragraph
+                font-size: 1.6rem
+                text-align: left
+                line-height: 2.4rem
