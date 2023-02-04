@@ -193,6 +193,7 @@ header nav ul li:active {
 
 @media screen and (min-width: 1440px) {
   .benefits {
+    width: fit-content;
     margin-top: 158px;
     padding: 0 280px;
     display: grid;
